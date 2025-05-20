@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jatin's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- Navbar -->
+  <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold tracking-wider text-white">Jatin's Portfolio</h1>
+      <ul class="flex gap-6 text-sm font-semibold text-gray-300">
+        <li><a href="#welcome" class="hover:text-yellow-400 transition">Welcome</a></li>
+        <li><a href="#about" class="hover:text-yellow-400 transition">About</a></li>
+        <li><a href="#achievements" class="hover:text-yellow-400 transition">Achievements</a></li>
+        <li><a href="#goals" class="hover:text-yellow-400 transition">Goals</a></li>
+        <li><a href="#personal" class="hover:text-yellow-400 transition">Personal</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Welcome -->
+  <section id="welcome" class="py-20 text-center bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-bold text-yellow-400 mb-4">Welcome to My Professional Portfolio</h2>
+      <p class="text-lg font-semibold text-gray-200 mb-6">I'm <strong>Jatin S. Tandel</strong> — Fueling innovation with technology and creativity.</p>
+      <img src="profile.jpg" alt="Profile Photo" class="mx-auto w-40 h-40 rounded-full border-4 border-yellow-400 shadow-md mb-6" />
+      <video controls class="mx-auto w-full max-w-md rounded-lg border-4 border-yellow-400 shadow-xl">
+        <source src="videos/intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-6">About Me</h2>
+      <div class="space-y-3 text-lg font-semibold text-gray-300">
+        <p><strong>Name:</strong> Jatin S. Tandel</p>
+        <p><strong>Location:</strong> Palghar, Maharashtra, India</p>
+        <p><strong>Education:</strong> B.E in Electronics and Computer Science (Currently Pursuing)</p>
+        <p><strong>Languages:</strong> English, Hindi, Marathi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-6">Achievements</h2>
+      <ul class="list-disc list-inside space-y-3 text-lg font-semibold text-gray-300">
+        <li>🏁 Awarded for extra curricular activities</li>
+        <li>🏅 Best solo act performer in Palghar district</li>
+        <li>🎓 Certifications: Data Networking, Unix, Sequential Digital Circuits, Basics of C++</li>
+        <li>🛠️ Built a MySQL database for a travel company</li>
+        <li>🚜 Group project "LandRover" using soil moisture sensor</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-6">Future Goals</h2>
+      <p class="text-lg font-semibold text-gray-300 leading-relaxed">
+        My goal is to contribute to open-source, assist fellow developers, and create innovative tools that enhance accessibility and speed in technology — much like the precision and performance of F1 cars.
+      </p>
+    </div>
+  </section>
+
+  <!-- Personal -->
+  <section id="personal" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-6">Personal Interests</h2>
+      <div class="space-y-3 text-lg font-semibold text-gray-300">
+        <p><strong>Hobbies:</strong> Gaming, Photography, Gym — fostering creativity and focus.</p>
+        <p><strong>Role Models:</strong> Steve Jobs (Innovation), A.P.J. Abdul Kalam (Vision)</p>
+        <p><strong>Books:</strong> “Rich Dad Poor Dad” – Financial wisdom for rapid growth.</p>
+        <p><strong>Favorite Sites:</strong> Dev.to, Hashnode, Product Hunt</p>
+        <p><strong>Startups I Admire:</strong> Notion, Figma – sleek, fast, and highly efficient.</p>
+        <p><strong>Volunteering:</strong> Taught basic tech skills to children in rural areas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-6">Contact Me</h2>
+      <div class="text-lg font-semibold text-gray-300 space-y-3">
+        <p>📞 <a href="tel:+919764151223" class="underline hover:text-yellow-400">+91 97641 51223</a></p>
+        <p>💬 <a href="https://wa.me/919764151223" target="_blank" class="underline hover:text-yellow-400">Chat on WhatsApp</a></p>
+        <p>📧 <a href="mailto:jatintandel2017@gmail.com" class="underline hover:text-yellow-400">jatintandel2017@gmail.com</a></p>
+
+        <!-- Google Map Embed -->
+        <div class="mt-6">
+          <iframe 
+            class="w-full h-64 rounded-md border-2 border-yellow-400" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.2891252347765!2d72.7549644748125!3d19.079029282123946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b001be2895c7%3A0x8fa70112d40434d8!2sPalghar%2C%20Maharashtra%20401404%2C%20India!5e0!3m2!1sen!2sin!4v1716183779990!5m2!1sen!2sin" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <p>🌐 Socials: 
+          <a href="https://github.com/JatinTandel" class="underline hover:text-yellow-400 mx-2">GitHub</a>
+          <a href="https://linkedin.com/in/JatinTandel" class="underline hover:text-yellow-400 mx-2">LinkedIn</a>
+          <a href="https://instagram.com/jatinnnnn._._" class="underline hover:text-yellow-400 mx-2">Instagram</a>
+          <a href="https://twitter.com/JatinTandel" class="underline hover:text-yellow-400 mx-2">Twitter</a>
+        </p>
+      </div>
+
+      <!-- Contact Form -->
+      <form action="https://formspree.io/f/yourformid" method="POST" class="mt-8 space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-gray-700 text-white" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-gray-700 text-white" />
+        <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-gray-700 text-white"></textarea>
+        <button type="submit" class="bg-yellow-400 text-black px-6 py-2 rounded font-bold hover:bg-yellow-300 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p class="text-lg font-semibold">Crafted with ❤️ by Jatin S. Tandel | © 2025</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
