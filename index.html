@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <link rel="icon" href="favicon.ico" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jatin's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    #loader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #001f3f;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .loader-spin {
+      border: 8px solid #e5e7eb;
+      border-top: 8px solid #facc15;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #facc15;
+      color: #000;
+      padding: 10px 14px;
+      border-radius: 9999px;
+      font-weight: bold;
+      display: none;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 100;
+    }
+  </style>
+</head>
+<body class="bg-[#f8f9fa] text-gray-900">
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-spin"></div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+  <!-- Navbar -->
+  <header class="bg-[#001f3f] shadow-md sticky top-0 z-50 transition-all duration-500">
+    <nav class="container mx-auto px-4 sm:px-6 py-4 flex flex-wrap items-center justify-between" data-aos="fade-down">
+      <h1 class="text-2xl font-bold tracking-wider text-white w-full sm:w-auto mb-2 sm:mb-0 transition-transform hover:scale-105">Jatin's Portfolio</h1>
+      <ul class="flex flex-wrap gap-3 text-sm font-semibold text-gray-300 justify-center sm:justify-end w-full sm:w-auto transition duration-300">
+        <li><a href="#welcome" class="hover:text-yellow-400 hover:underline transition-all duration-300">Welcome</a></li>
+        <li><a href="#about" class="hover:text-yellow-400 hover:underline transition-all duration-300">About</a></li>
+        <li><a href="#achievements" class="hover:text-yellow-400 hover:underline transition-all duration-300">Achievements</a></li>
+        <li><a href="#goals" class="hover:text-yellow-400 hover:underline transition-all duration-300">Goals</a></li>
+        <li><a href="#personal" class="hover:text-yellow-400 hover:underline transition-all duration-300">Personal</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400 hover:underline transition-all duration-300">Contact</a></li>
+        <li><a href="shopping.html" class="hover:text-yellow-400 hover:underline transition-all duration-300">Shopping</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Welcome -->
+  <section id="welcome" class="py-16 sm:py-20 text-center bg-[#f8f9fa] px-4" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl sm:text-5xl font-bold text-gray-700 mb-4" data-aos="fade-down">Welcome to My Professional Portfolio</h2>
+      <p class="text-base sm:text-lg font-semibold text-gray-700 mb-6" data-aos="fade-up">I'm <strong>Jatin .S. Tandel</strong> — Fueling innovation with technology and creativity.</p>
+      <img src="profile.jpg" alt="Profile Photo" class="mx-auto w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-gray-900 shadow-md mb-6" data-aos="zoom-in" />
+      <video controls class="mx-auto w-full max-w-xs sm:max-w-md rounded-lg border-4 border-gray-900 shadow-xl" data-aos="zoom-in-up">
+        <source src="jatin.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-[#001f3f] px-4 text-gray-100" data-aos="fade-right">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">About Me</h2>
+      <div class="space-y-3 text-base sm:text-lg font-semibold">
+        <p><strong>Name:</strong> Jatin S. Tandel</p>
+        <p><strong>Location:</strong> Palghar, Maharashtra, India</p>
+        <p><strong>Education:</strong> B.E in Electronics and Computer Science (Currently Pursuing)</p>
+        <p><strong>Languages:</strong> English, Hindi, Marathi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-16 bg-[#f8f9fa] px-4 text-gray-900" data-aos="zoom-in">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-700 mb-6">Achievements</h2>
+      <ul class="list-disc list-inside space-y-3 text-base sm:text-lg font-semibold">
+        <li>🏁 Awarded for extra curricular activities</li>
+        <li>🏅 Best solo act performer in Palghar district</li>
+        <li>🎓 Certifications: Data Networking, Unix, Sequential Digital Circuits, Basics of C++</li>
+        <li>🛠️ Built a MySQL database for a travel company</li>
+        <li>🚜 Group project "LandRover" using soil moisture sensor</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals" class="py-16 bg-[#001f3f] px-4 text-gray-100" data-aos="fade-left">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Future Goals</h2>
+      <p class="text-base sm:text-lg font-semibold leading-relaxed">
+        My goal is to contribute to open-source, assist fellow developers, and create innovative tools that enhance accessibility and speed in technology — much like the precision and performance of F1 cars.
+      </p>
+    </div>
+  </section>
+
+  <!-- Personal -->
+  <section id="personal" class="py-16 bg-[#f8f9fa] px-4 text-gray-900" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-700 mb-6">Personal Interests</h2>
+      <div class="space-y-3 text-base sm:text-lg font-semibold">
+        <p><strong>Hobbies:</strong> Gaming, Photography, Gym — fostering creativity and focus.</p>
+        <p><strong>Role Models:</strong> Steve Jobs (Innovation), A.P.J. Abdul Kalam (Vision)</p>
+        <p><strong>Books:</strong> “Rich Dad Poor Dad” – Financial wisdom for rapid growth.</p>
+        <p><strong>Favorite Sites:</strong> Dev.to, Hashnode, Product Hunt</p>
+        <p><strong>Startups I Admire:</strong> Notion, Figma – sleek, fast, and highly efficient.</p>
+        <p><strong>Volunteering:</strong> Taught basic tech skills to children in rural areas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-[#001f3f] px-4 text-gray-100" data-aos="zoom-in-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Contact Me</h2>
+      <div class="text-base sm:text-lg font-semibold space-y-3">
+        <p>📞 <a href="tel:+919764151223" class="underline hover:text-yellow-400">+91 97641 51223</a></p>
+        <p>💬 <a href="https://wa.me/919764151223" target="_blank" class="underline hover:text-yellow-400">Chat on WhatsApp</a></p>
+        <p>📧 <a href="mailto:jatintandel2017@gmail.com" class="underline hover:text-yellow-400">jatintandel2017@gmail.com</a></p>
+
+        <div class="mt-8" data-aos="fade-right">
+          <p class="mb-2 font-bold text-lg">🌐 Connect with me:</p>
+          <div class="flex justify-start gap-6 text-2xl">
+            <a href="https://github.com/JatinTandel" class="hover:text-yellow-400 transition" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/JatinTandel" class="hover:text-yellow-400 transition" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/jatinnnnn._._" class="hover:text-yellow-400 transition" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/JatinTandel" class="hover:text-yellow-400 transition" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="mt-6" data-aos="zoom-in">
+          <iframe 
+            class="w-full h-64 rounded-md border-2 border-yellow-400" 
+            src="https://www.google.com/maps/embed?pb=..." 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <form action="https://formspree.io/f/yourformid" method="POST" class="mt-8 space-y-4" data-aos="fade-up">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-gray-200 text-black" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-gray-200 text-black" />
+        <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 rounded bg-gray-200 text-black"></textarea>
+        <button type="submit" class="bg-gray-200 text-black px-6 py-2 rounded font-bold hover:bg-yellow-300 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#001f3f] text-white py-6 text-center px-4" data-aos="fade-up">
+    <p class="text-base sm:text-lg font-semibold">Crafted with ❤️ by Jatin .S. Tandel | © 2025</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    window.addEventListener('load', () => {
+      document.getElementById('loader').style.display = 'none';
+    });
+
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
+
+
+
+
